@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+div{
+    background-color: pink;
+}
+p{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table{
+    text-align: center;
+    background-color: rgb(255, 163, 179);
+}
+#botao{
+    background-color: pink;
+    transition: 0.5s;
+}
+#botao:hover{
+    background-color: crimson;
+    cursor: pointer;
+}

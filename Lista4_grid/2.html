@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "header header" 
+                                "nav contenti"
+                                "nav footer";
+            grid-template-rows: 100px 300px 100px;
+            grid-template-columns: 150px 350px;
+        }
+        .box{
+            border: 1px solid black;
+            
+        }
+        #box1{grid-area: header; 
+            background-color: deeppink;
+        }
+        #box2{grid-area: nav; 
+            background-color: olive;
+        }
+        #box3{grid-area: contenti; 
+            background-color: lightsalmon;
+        }
+        #box4{grid-area: footer; 
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Header</div>
+        <div class="box" id="box2">Nav</div>
+        <div class="box" id="box3">Content</div>
+        <div class="box" id="box4">Footer</div>
+    </div>
+    
+</body>
+</html>

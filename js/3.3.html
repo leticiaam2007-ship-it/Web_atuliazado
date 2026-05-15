@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h1>Sorteio </h1>
+
+<label for="n1">Numero 1:</label>
+<input type="number" id="n1" >
+<label for="n2">Numero 2:</label>
+<input type="number" id="n2" >
+
+<div id ="resultado"></div>
+
+<button id="btn">Sortear</button>
+
+
+<script>
+
+  n1,n2,resultado;
+  let button = document.querySelector("#btn");
+  button.addEventListener("click",()=>{
+       let vmin=Number (n1.value);
+       let vmax=Number(n2.value);
+       let r = Math.floor (Math.random()*(vmax-vmin)+ vmin)
+       //math.randoim para sporteio e math.floor para nao ter decimais 
+       
+       console.log(r);
+       let p = document.createElement("p")
+       p.innerHTML = r
+
+       //estilizando o codigo 
+       p.style.display= "inline-block" //ele vai se comportar como bloco
+       p.style.border = "1px,solid,black" //para a borda  
+       p.style.borderRadius="50%" // para deixar redondo 
+       p.style.padding="10px" // para dar espaço
+       p.style.gap="3px"//define espaçamento 
+       //daqui pra cima estilização 
+
+       resultado.appendChild(p);
+
+
+
+//esse codigo faz o sortei de numeros entre um aintervalo determinado pelo ususario
+
+
+
+
+
+
+  })
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
