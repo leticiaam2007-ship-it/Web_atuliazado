@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>O que é JavaScript?</title>
+</head>
+<body>
+
+    <h1 id="titulo">O que é JavaScript?</h1>
+
+    <p id="motivacao">
+        JavaScript foi criado para deixar as páginas da internet mais interativas e dinâmicas.
+        Com ele é possível criar animações, validar formulários e responder ações do usuário.
+    </p>
+
+    <p id="execucao">
+        O JavaScript pode ser executado no navegador, como Chrome e Firefox, ou no servidor,
+        utilizando tecnologias como Node.js.
+    </p>
+
+    <p id="sandbox">
+        No navegador, o JavaScript funciona em um ambiente chamado sandbox,
+        que limita o acesso ao sistema do computador para oferecer mais segurança.
+    </p>
+
+    <p id="objetos">
+        Alguns objetos globais importantes do JavaScript são:
+        document (manipula a página HTML),
+        console (mostra mensagens no console)
+        e alert (exibe caixas de aviso).
+    </p>
+
+    <p id="hora"></p>
+
+    <script>
+        // Mensagem no console
+        console.log("Página carregada com sucesso!");
+
+        // Saudação ao abrir a página
+        alert("Olá! Bem-vindo à página sobre JavaScript.");
+
+        // Exibir hora atual
+        let agora = new Date();
+
+        document.getElementById("hora").innerHTML =
+            "Hora atual: " + agora.toLocaleTimeString();
+    </script>
+
+</body>
+</html>
