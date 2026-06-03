@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 -  Estrutura e sintaxe do CSS 
+</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        
+        .container {
+            width: 90vw;
+            max-width: 800px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block; /* Para a linha não atravessar a tela toda */
+        }
+
+        .definicoes {
+            margin-bottom: 30px;
+            line-height: 1.8;
+            text-align: left; 
+        }
+
+        #destaque-seletor {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .exemplos-diretos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .meu-botao {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .meu-botao:hover {
+            background-color: #2ecc71;
+            transform: translateY(-3px);
+        }
+
+        .item-check::before {
+            content: "✅ ";
+        }
+
+        /* Animação do Foguete */
+        @keyframes viajar {
+            0% { left: -150px; transform: rotate(90deg); }
+            100% { left: 100%; transform: rotate(90deg); }
+        }
+
+        .foguete {
+            position: fixed;
+            bottom: 80px;
+            font-size: 80px;
+            animation: viajar 5s linear infinite;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Entendendo o CSS</h1>
+
+        <div class="definicoes">
+            <p>Uma <strong>regra CSS</strong> é o que usamos para estilizar o HTML. Ela tem três partes:</p>
+            <ul>
+                <li><span id="destaque-seletor">Seletor:</span> Quem a regra atinge (ex: tag, classe ou ID).</li>
+                <li><strong>Propriedade:</strong> O que queremos mudar (ex: cor, tamanho).</li>
+                <li><strong>Valor:</strong> A configuração que damos (ex: azul, 20px).</li>
+            </ul>
+        </div>
+
+        <div class="exemplos-diretos">
+            <div>
+                <p><strong>Pseudo-classe:</strong></p>
+                <br>
+                <button class="meu-botao">Botão :hover</button>
+            </div>
+
+            <div>
+                <p><strong>Pseudo-elemento:</strong></p>
+                <br>
+                <p class="item-check">Item Marcado</p>
+            </div>
+        </div>
+    </div>
+
+    <span class="foguete">🚀</span>
+
+</body>
+</html>
