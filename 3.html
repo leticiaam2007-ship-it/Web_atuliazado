@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 3 - Bandeiras</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            padding-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Base das bandeiras */
+        .area-bandeira {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 0 auto; /* centraliza */
+            display: flex;
+            margin-bottom: 50px; /* espaco entre elas */
+        }
+
+        /* BANDEIRA DA FRANÇA */
+        .franca {
+            flex-direction: row;
+        }
+        .franca .azul { background-color: blue; flex: 1; }
+        .franca .branco { background-color: white; flex: 1; }
+        .franca .vermelho { background-color: red; flex: 1; }
+
+        /* BANDEIRA DA ALEMANHA */
+        .alemanha {
+            flex-direction: column;
+        }
+        .alemanha .preto { background-color: black; flex: 1; }
+        .alemanha .vermelho { background-color: red; flex: 1; }
+        .alemanha .amarelo { background-color: yellow; flex: 1; }
+
+        /* BANDEIRA DO JAPÃO */
+        .japao {
+            background-color: white;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        .japao .circulo-vermelho {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+
+    <h1>Resolução da Questão 3 </h1>
+
+    <p style="text-align: center;">Bandeira França:</p>
+    <div class="area-bandeira franca">
+        <div class="azul"></div>
+        <div class="branco"></div>
+        <div class="vermelho"></div>
+    </div>
+
+    <p style="text-align: center;">Bandeira Alemanha:</p>
+    <div class="area-bandeira alemanha">
+        <div class="preto"></div>
+        <div class="vermelho"></div>
+        <div class="amarelo"></div>
+    </div>
+
+    <p style="text-align: center;">Bandeira Japão:</p>
+    <div class="area-bandeira japao">
+        <div class="circulo-vermelho"></div>
+    </div>
+
+</body>
+</html>
