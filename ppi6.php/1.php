@@ -12,7 +12,7 @@
 
 <li>Quais são as tags usadas para definição de código PHP? </a> </li>
                         <ul type="disc">
-                          <li> A tag de abertura do php é  </li>
+                          <li> A tag de abertura do php é   </li>
                           <li>Alemanha → 3 faixas horizontais iguais (preto, vermelho, amarelo);</li>
                           <li>Japão → fundo branco e círculo vermelho centralizado.</li>
                         
